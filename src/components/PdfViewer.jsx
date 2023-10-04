@@ -55,7 +55,7 @@ const PrevPageButton = styled("button")(({ theme }) => ({
     backgroundColor: theme.palette.text.primary,
 }));
 
-const PdfViewer = ({ file, doublePage = false }) => {
+const PdfViewer = ({ file, doublePage = true }) => {
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
     const ContainerRef = useRef(null);
@@ -67,16 +67,16 @@ const PdfViewer = ({ file, doublePage = false }) => {
     };
 
     const handleNextPage = () => {
-        if (pageNumber < numPages) {
-            setPageNumber(pageNumber + 1);
+        if (pageNumber + (doublePage ? 2 : 1) <= numPages) {
+          setPageNumber(pageNumber + (doublePage ? 2 : 1));
         }
-    };
-
-    const handlePrevPage = () => {
+      };
+      
+      const handlePrevPage = () => {
         if (pageNumber > 1) {
-            setPageNumber(pageNumber - 1);
+          setPageNumber(pageNumber - (doublePage ? 2 : 1));
         }
-    };
+      };
 
     const onItemClick =({ pageNumber: itemPageNumber }) => {
         setPageNumber(itemPageNumber);
