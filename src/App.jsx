@@ -16,6 +16,7 @@ import Descentrar from "./screens/PedagogiesScreen/descentrar/Descentrar";
 import Resistir from "./screens/PedagogiesScreen/resistir/Resistir";
 import MemoriasScreen from "./screens/MemoriasScreen";
 import ProximamaneteScreen from "./screens/ProximamenteScreen";
+import BlogScreen from "./screens/BlogScreen";
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
             <Route path="/creciente" element={<CrecienteScreen />} />
             <Route path="/memorias" element={<MemoriasScreen />} />
             <Route path="/credits" element={<CreditosScreen />} />
+
+            <Route path="/blog" element={<BlogScreen />} />
 
             <Route path="/mapa-colombia" element={<ProximamaneteScreen />} />
             <Route path="*" element={<NotFound />} />

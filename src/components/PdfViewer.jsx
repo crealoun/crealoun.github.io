@@ -55,7 +55,7 @@ const PrevPageButton = styled("button")(({ theme }) => ({
     backgroundColor: theme.palette.text.primary,
 }));
 
-const PdfViewer = ({ file, doublePage = true }) => {
+const PdfViewer = ({ file, doublePage = false }) => {
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
     const ContainerRef = useRef(null);

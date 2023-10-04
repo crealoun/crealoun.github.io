@@ -113,7 +113,7 @@ const DesahogoScreen = () => {
               {`“Nuestra lengua está viva y se multiplica”`}
             </Typography>
             <Typography variant="body" paragraph={true}>
-              {`Aquí encontrarás las memorias que nacieron en el marco del laboratorio de edición  del proyecto «Crea-lo: otros mundos posibles en la UN» 2021. Donde estudiantes y acompañantes pedagógicos se encontraron para entretejer voces, sentires y aprendizajes. “Te invitamos a ser parte activa de esta red desde la escucha, la resonancia, el encuentro y la activación, de otros modos de relacionamiento multiespecies, para este y otros tiempos.”`}
+              {`Aquí encontrarás las memorias que nacieron en el marco del laboratorio de edición  del proyecto «Crea-lo: otros mundos posibles en la UN» 2021. Donde estudiantes y acompañantes pedagógicos se encontraron para entretejer voces, sentires y aprendizajes. “Te invitamos a ser parte activa de esta red desde la escucha, la  resonancia, el encuentro y la activación, de otros modos de relacionamiento multiespecies, para este y otros tiempos.”`}
             </Typography>
           </Container>
           <Container
