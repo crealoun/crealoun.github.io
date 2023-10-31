@@ -17,6 +17,7 @@ import Resistir from "./screens/PedagogiesScreen/resistir/Resistir";
 import MemoriasScreen from "./screens/MemoriasScreen";
 import ProximamaneteScreen from "./screens/ProximamenteScreen";
 import BlogScreen from "./screens/BlogScreen";
+import MapaScreen from "./screens/MapaScreen/MapaScreen";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
 
             <Route path="/blog" element={<BlogScreen />} />
 
-            <Route path="/mapa-colombia" element={<ProximamaneteScreen />} />
+            <Route path="/mapa-colombia" element={<MapaScreen />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
