@@ -30,7 +30,7 @@ const MapaScreen = () => {
     "William Camilo Castro Ciendua",
     "Paola Andrea Aguirre Bravo",
     "Sara Nicol Álvarez Rojas", 
-    "Santiago Sarmiento Mora",
+    "Santiago Sarmiento  Mora",
     "César Luis Cerquera Montealegre",
     "María Alejandra Ruiz Hernández",
     "Laura Juliana Gáfaro Ortíz",

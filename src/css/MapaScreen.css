@@ -74,6 +74,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1000;
+  overflow-y: auto;
 }
 
 /* Estilo para el contenido de la ventana modal */
@@ -83,6 +84,8 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   max-width: 80%;
+  max-height: 80vh; /* Establece la altura máxima de la ventana modal */
+  overflow-y: auto; /* Permite desplazamiento vertical si el contenido es más grande que la ventana modal */
 }
 
 /* Estilo para el botón 'Cerrar' */
@@ -95,3 +98,18 @@ body {
   float: right;
 }
 
+.modal-content audio, .modal-content video, .modal-content img {
+  max-width: 100%;
+  max-height: 80vh; /* Ajusta la altura máxima según tus necesidades */
+}
+
+.modal-content object[type="application/pdf"] {
+  width: 100%;
+  max-height: 80vh; /* Ajusta la altura máxima según tus necesidades */
+}
+
+/* .tooltip {
+  position: relative;
+  display: flex;
+  justify-content:space-around;
+} */
