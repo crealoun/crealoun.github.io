@@ -96,6 +96,7 @@ const Colombia = () => {
                 <div key={index}>
                   {isMultiple ? <h3>Contenido {index + 1}</h3> : null}
                   {tipo.map((entry, entryIndex) => (
+                    
                     <div key={entryIndex}>
                       <h4>
                         Título:{" "}
