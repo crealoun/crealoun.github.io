@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from "react";
 import { styled } from "@mui/system";
 import { useTheme } from "@mui/material/styles";
-import { useDeviceDetect } from "../hooks";
+import { useDeviceDetect } from "../../hooks";
 import Modal from "react-modal";
 
-import FooterLogos from "../components/FooterLogos";
-import "../css/BlogScreen.css";
+import FooterLogos from "../../components/FooterLogos";
+import "../../css/BlogScreen.css";
 
 const Container = styled("div")(({ theme }) => ({
   position: "relative",

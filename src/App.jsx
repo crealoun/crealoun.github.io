@@ -1,3 +1,4 @@
+import React, { lazy, Suspense, useMemo, useState } from "react";
 import "./App.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import ThemeContextProvider from "./contexts/ThemeContext";
@@ -16,8 +17,10 @@ import Descentrar from "./screens/PedagogiesScreen/descentrar/Descentrar";
 import Resistir from "./screens/PedagogiesScreen/resistir/Resistir";
 import MemoriasScreen from "./screens/MemoriasScreen";
 import ProximamaneteScreen from "./screens/ProximamenteScreen";
-import BlogScreen from "./screens/BlogScreen";
+import BlogScreen from "./screens/BlogScreen/BlogScreen";
 import MapaScreen from "./screens/MapaScreen/MapaScreen";
+import MapaUN from "./screens/BlogScreen/MapaUN";
+
 
 function App() {
   return (
@@ -41,6 +44,7 @@ function App() {
             <Route path="/credits" element={<CreditosScreen />} />
 
             <Route path="/blog" element={<BlogScreen />} />
+            <Route path="/mapaun" element={<MapaUN />} />
 
             <Route path="/mapa-colombia" element={<MapaScreen />} />
             <Route path="*" element={<NotFound />} />
