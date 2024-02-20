@@ -215,10 +215,11 @@ export default props => {
                             textAlign: "left",
                             textDecoration: "none",
                             transition: "color 0.2s",
-                        }} my={0}>Lorem Ipsum <span style={{ fontSize: "1rem", fontWeight: "bold", opacity: "0.8"}}>2023</span></Typography>
+                        }} my={0}>Crealo UN <span style={{ fontSize: "1rem", fontWeight: "bold", opacity: "0.8"}}>2023</span></Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography onClick={() => (openWindow("https://crealoun.wordpress.com/"))}>Blog <LaunchIcon fontSize="0.7rem" /></Typography>
+                        {/* <Typography onClick={() => (openWindow("https://crealoun.wordpress.com/"))}>Blog <LaunchIcon fontSize="0.7rem" /></Typography> */}
+                        <Typography onClick={() => (handleOnClose(), navigate("/mapaun"))}>Blog</Typography>
                         <Typography onClick={() => (handleOnClose(), navigate("/mapa-colombia"))}>Mapa</Typography>
                     </AccordionDetails>
                 </Accordion>
